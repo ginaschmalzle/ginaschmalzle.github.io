@@ -12,8 +12,8 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - Gina Schmalzle</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>Iteration and Recursion in Python</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
         <!--[if IE]>
@@ -23,9 +23,9 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Gina Schmalzle </a></h1>
+                <h1><a href="./">Gina Schmalzle </a></h1>
                 <nav><ul>
-                    <li  >  <a href="/category/home.html">Home</a></li> 
+                    <li  class="active" >  <a href="/category/home.html">Home</a></li> 
                     <li  >  <a href="/category/bio.html">Bio</a></li> 
                     <li  >  <a href="/category/pubs.html">Pubs</a></li> 
                     <li><a href="/vectorprojector/vectorprojector.html">Vector Projector</a></li>
@@ -33,15 +33,19 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./Fibo.html" rel="bookmark"
+           title="Permalink to Iteration and Recursion in Python"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
+    </header>
 
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../Fibo.html"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <span>Thu 10 April 2014</span>
-<span>| tags: <a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/python.html">python</a><a href="../tag/iterative.html">iterative</a><a href="../tag/recursion.html">recursion</a></span>
-</footer><!-- /.post-info --><div class="section" id="iteration-vs-recursion-in-python">
+<span>| tags: <a href="./tag/fibonacci.html">Fibonacci</a><a href="./tag/python.html">python</a><a href="./tag/iterative.html">iterative</a><a href="./tag/recursion.html">recursion</a></span>
+</footer><!-- /.post-info -->      <div class="section" id="iteration-vs-recursion-in-python">
 <h2><strong>Iteration vs. Recursion in Python</strong></h2>
 <p>For the past week at Hacker School, I took a step back from making a cool and awesome projects like the <a class="reference external" href="http://geodesygina.com/vectorprojector/vectorprojector.html">Vector Projector</a>  or the <a class="reference external" href="http://geodesygina.com/vectorprojector/vectorprojector.html">Japan Earthquake</a> projects and looked at some good, old-fashioned computer science concepts. Much of what I did was repetive; I found a really simple problem, solved it using some method, and then tried solving it again using a variety of other methods.  One project I worked on was programming the  n'th <strong>Fibonacci</strong> number using <strong>python</strong>. In this blog I will describe <strong>iterative</strong> and <strong>recursive</strong> methods for solving this problem in Python.</p>
 <p>What are <strong>Fibonacci</strong> numbers (or series or sequence)?  From <a class="reference external" href="http://en.wikipedia.org/wiki/Fibonacci_number">the Fibonacci Wiki Page</a>, the Fibonacci sequence is defined to start at either 0 or 1, and the next number in the sequence is one.  Each subsequent number in the sequence is simply the sum of the prior two.  Hence the Fibonacci sequence looks like:</p>
@@ -244,80 +248,11 @@ if(typeof(mpld3) !== "undefined"){
 <p>Woa!  As <a class="reference external" href="http://maryrosecook.com/">Mary Rose Cook</a> would say, &quot;Now we're cookin' with gas.&quot;  Run times for the recursive method are now out-pacing the iterative method!  So, by memoizing your recursive function you can get your code to run REALLY fast!  A down side to this, however, is that you are going to take up memory by storing information in your hash table.</p>
 <p>Hope you liked my blog!  'Till next time!</p>
 </div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Fibo.html" rel="bookmark"
-                           title="Permalink to Iteration and Recursion in Python"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
-                </header>
+    </div><!-- /.entry-content -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 10 April 2014</span>
-<span>| tags: <a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/python.html">python</a><a href="../tag/iterative.html">iterative</a><a href="../tag/recursion.html">recursion</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Iteration vs. Recursion in Python</strong></p>
-
-                <a class="readmore" href="../Fibo.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../VectorProj.html" rel="bookmark"
-                           title="Permalink to Projecting GPS velocity vectors onto a profile">Projecting GPS velocity vectors onto a profile</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 19 March 2014</span>
-<span>| tags: <a href="../tag/gps.html">GPS</a><a href="../tag/vector-projection.html">vector projection</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>GPS velocity projection</strong></p>
-
-                <a class="readmore" href="../VectorProj.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../GeodesyGina.html" rel="bookmark"
-                           title="Permalink to Setting up Custom Domain Names with Github Pages">Setting up Custom Domain Names with Github Pages</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 11 March 2014</span>
-<span>| tags: <a href="../tag/pelican.html">pelican</a><a href="../tag/custom-domain-name.html">custom domain name</a><a href="../tag/godaddy.html">godaddy</a></span>
-</footer><!-- /.post-info -->                <p class="first last">Custom domain names</p>
-
-                <a class="readmore" href="../GeodesyGina.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../MyPubs.html" rel="bookmark"
-                           title="Permalink to My Publications">My Publications</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 10 March 2014</span>
-<span>| tags: <a href="../tag/schmalzle.html">Schmalzle</a><a href="../tag/publications.html">Publications</a></span>
-</footer><!-- /.post-info -->                <p class="first last">Publications</p>
-
-                <a class="readmore" href="../MyPubs.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>

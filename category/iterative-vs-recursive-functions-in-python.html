@@ -12,7 +12,7 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - Schmalzle</title>
+        <title>Gina Schmalzle - Iterative vs. Recursive Functions in Python</title>
         <link rel="stylesheet" href="../theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
@@ -37,23 +37,54 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../MyPubs.html">My Publications</a></h1>
+                    <h1 class="entry-title"><a href="../tmp.html">Iteration and Recursion in Python</a></h1>
 <footer class="post-info">
-        <span>Mon 10 March 2014</span>
-<span>| tags: <a href="../tag/schmalzle.html">Schmalzle</a><a href="../tag/publications.html">Publications</a></span>
-</footer><!-- /.post-info --><p><strong>Schmalzle, G. M.</strong>, McCaffrey, R., Creager, K., Central Cascadia Subduction Zone Creep, Geophysics, Geochemistry, Geosystems, doi: 10.1002/2013GC005172, 2014.</p>
-<p>Karimzadeh, S., Cakir, Z., Osmanoglu, B., <strong>Schmalzle, G. M.</strong>, Miyajima, M., Amiraslanzadeh, R., and Djamour, Y., Interseismic strain accumulation across the North Tabriz Fault (NW Iran) deduced from InSAR time series, Journal of Geodynamics, 66, doi: 10.1016/j.jog2013.02.003, 2013.</p>
-<p>Gourmelen, N., Dixon, T.H., Amelung, F., <strong>Schmalzle, G. M.</strong>, Acceleration and Evolution of Faults: An Example from the Hunter Mountain-Panamint Valley Fault Zone, Eastern California, Earth and Planetary Science Letters, 10.1016/j.epsl.2010.11.016, 2010.</p>
-<p>Fulton, P., <strong>Schmalzle, G. M.</strong>, Harris, R., Dixon, T. H., Reconciling patterns of interseismic strain accumulation with thermal observations across the Carrizo segment of the San Andreas Fault, Earth and Planetary Science Letters, 10.1016/j.epsl.2010.10.024, 2010.</p>
-<p><strong>Schmalzle, G. M.</strong>, The Earthquake Cycle of Strike-Slip Faults, PhD Thesis, University of Miami, Miami, FL, 211 pp., 2008.</p>
-<p>Biggs, J., Burgmann, R., Freymueller, J., Lu, Z., Parsons, B., Ryder, I., <strong>Schmalzle, G. M.</strong>, Wright, T., The postseismic response to the 2002 M7.9 Denali Fault earthquake: constraints from InSAR, Geophysical Journal International, 175 (3), 10.1111/j.1365-246X.2008.03932.x, 2008.</p>
-<p><strong>Schmalzle, G. M.</strong>, Dixon, T.H., Malservisi, R., Govers, R., Strain accumulation across the Carrizo segment of the San Andreas Fault, California:  Impact of laterally varying crustal properties, Journal of Geophysical Research, B, Solid Earth and Planets, 111, doi:10.1029/2005JB003843, 2006.</p>
-<p>Sabburg, J., Kimlin, M. G., Rives, J. E., Meltzer, R. S., Taylor, T. E., <strong>Schmalzle, G. M.</strong>, Zheng, S., Huang, N., Wilson, A. R., Udelhofen, P. M., Comparisons of corrected daily integrated erythemal UVR from the U.S. EPA/UGA network of Brewer spectroradiometers with model and satellite data, Proceedings of SPIE, 4482, doi:10.1117/1112.452955, 2002.</p>
-<p>Sabburg, J., Rives, J. E., Meltzer, R. S., Taylor, T. E., <strong>Schmalzle, G. M.</strong>, Zheng, S., Huang, N., Wilson, A. R., Udelhofen, P. M., Comparisons of corrected daily integrated erythemal UVR data from the U.S. EPA/UGA network of Brewer spectroradiometers with model and TOMS-inferred data, Journal of Geophysical Research, 107, doi:10.1029/2001JD001565, 2002.</p>
-<p>REFERENCE MANUALS</p>
-<p><strong>Schmalzle, G. M.</strong> (2005), Survival Guide for the Geodesy Lab, edited, p. 30, University of Miami, Rosenstiel School of Marine and Atmospheric Sciences Miami, FL.</p>
-<p>Thomas, T., and <strong>Schmalzle, G. M.</strong> (2000), The Site Operator's Standard Operating Procedure for the Brewer Spectrophotometer, edited, NOAA.</p>
-                </article>
+        <span>Thu 10 April 2014</span>
+<span>| tags: <a href="../tag/python.html">python</a><a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/iteration.html">iteration</a><a href="../tag/recursion.html">recursion</a></span>
+</footer><!-- /.post-info --><p>Here is an example d3 code:</p>
+<p><meta charset="utf-8">
+ <style type="text/css"></p>
+<div class="highlight"><pre>    <span class="p">.</span><span class="n">node</span> <span class="p">{</span>
+<span class="nl">cursor:</span> <span class="n">pointer</span><span class="p">;</span>
+</pre></div>
+
+
+<p>}</p>
+<p>.overlay{
+      background-color:#EEE;
+   }</p>
+<p>.node circle {
+     fill: #fff;
+     stroke: steelblue;
+     stroke-width: 1.5px;
+   }</p>
+<p>.node text {
+     font-size:10px;
+     font-family:sans-serif;
+   }</p>
+<p>.link {
+     fill: none;
+     stroke: #ccc;
+     stroke-width: 1.5px;
+   }</p>
+<p>.templink {
+     fill: none;
+     stroke: red;
+     stroke-width: 3px;
+   }</p>
+<p>.ghostCircle.show{
+       display:block;
+   }</p>
+<p>.ghostCircle, .activeDrag .ghostCircle{
+        display: none;
+   }</p>
+<p></style>
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+ <script src="./tree/dndTree.js"></script>
+ <body>
+     <div id="tree-container"></div>
+ </body></p>                </article>
 <p class="paginator">
     Page 1 / 1
 </p>
