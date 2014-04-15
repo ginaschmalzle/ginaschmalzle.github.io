@@ -12,8 +12,8 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - Home</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>Mapping and Plotting data with General Mapping Tools (GMT)</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
         <!--[if IE]>
@@ -23,7 +23,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Gina Schmalzle </a></h1>
+                <h1><a href="./">Gina Schmalzle </a></h1>
                 <nav><ul>
                     <li  class="active" >  <a href="/category/home.html">Home</a></li> 
                     <li  >  <a href="/category/bio.html">Bio</a></li> 
@@ -33,15 +33,19 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./GMT.html" rel="bookmark"
+           title="Permalink to Mapping and Plotting data with General Mapping Tools (GMT)"><strong>Mapping and Plotting data with General Mapping Tools (GMT)</strong></a></h1>
+    </header>
 
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../GMT.html"><strong>Mapping and Plotting data with General Mapping Tools (GMT)</strong></a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <span>Mon 14 April 2014</span>
-<span>| tags: <a href="../tag/general-mapping-tools.html">General Mapping Tools</a><a href="../tag/gmt.html">GMT</a><a href="../tag/etopo1.html">ETOPO1</a><a href="../tag/shell-script.html">shell script</a></span>
-</footer><!-- /.post-info --><div class="section" id="general-mapping-tools">
+<span>| tags: <a href="./tag/general-mapping-tools.html">General Mapping Tools</a><a href="./tag/gmt.html">GMT</a><a href="./tag/etopo1.html">ETOPO1</a><a href="./tag/shell-script.html">shell script</a></span>
+</footer><!-- /.post-info -->      <div class="section" id="general-mapping-tools">
 <h2><strong>General Mapping Tools</strong></h2>
 <p>Before my time here at <strong>Hacker School</strong> I put together a short, hands on course on how to use <a class="reference external" href="http://gmt.soest.hawaii.edu/">General Mapping Tools (GMT)</a>.  <strong>GMT</strong> is a very powerful <strong>mapping</strong> and <strong>data visualization</strong> package. This class was based around using <strong>GMT</strong> 4.  <strong>GMT</strong> 5 has slightly different syntax and functionality and will not work with the scripts presented here.  I intend to update the scripts to <strong>GMT</strong> 5 in the near future.</p>
 <p>The class was taught at the University of Washington Earth in the Department of Earth and Space Science, so it has an earth science theme -- <strong>earthquakes</strong>!  Here, students learn how to make a map with layers that include <strong>mapping</strong> <strong>topography</strong> and <strong>earthquake locations</strong>.  A subset of data is extracted from a profile line (red line in map below) so that <strong>earthquake</strong> depths can be plotted as a function of distance.   The end goal of the class is to produce the following map and transect:</p>
@@ -291,64 +295,11 @@ awk '{print($6,$3)}' projection.dat | psxy -R$west/$east/$dmin/$dmax $proj $tick
 open $out
 </pre>
 </div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Fibo.html" rel="bookmark"
-                           title="Permalink to Iteration and Recursion in Python"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
-                </header>
+    </div><!-- /.entry-content -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 10 April 2014</span>
-<span>| tags: <a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/python.html">python</a><a href="../tag/iterative.html">iterative</a><a href="../tag/recursion.html">recursion</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Iteration vs. Recursion in Python</strong></p>
-
-                <a class="readmore" href="../Fibo.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../VectorProj.html" rel="bookmark"
-                           title="Permalink to Projecting GPS velocity vectors onto a profile">Projecting GPS velocity vectors onto a profile</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 19 March 2014</span>
-<span>| tags: <a href="../tag/gps.html">GPS</a><a href="../tag/vector-projection.html">vector projection</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>GPS velocity projection</strong></p>
-
-                <a class="readmore" href="../VectorProj.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../GeodesyGina.html" rel="bookmark"
-                           title="Permalink to Setting up Custom Domain Names with Github Pages">Setting up Custom Domain Names with Github Pages</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 11 March 2014</span>
-<span>| tags: <a href="../tag/pelican.html">pelican</a><a href="../tag/custom-domain-name.html">custom domain name</a><a href="../tag/godaddy.html">godaddy</a></span>
-</footer><!-- /.post-info -->                <p class="first last">Custom domain names</p>
-
-                <a class="readmore" href="../GeodesyGina.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
