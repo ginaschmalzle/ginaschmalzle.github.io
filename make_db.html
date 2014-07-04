@@ -12,8 +12,8 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - Gina Schmalzle</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 1</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
         <!--[if IE]>
@@ -23,9 +23,9 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Gina Schmalzle </a></h1>
+                <h1><a href="./">Gina Schmalzle </a></h1>
                 <nav><ul>
-                    <li  >  <a href="/category/home.html">Home</a></li> 
+                    <li  class="active" >  <a href="/category/home.html">Home</a></li> 
                     <li  >  <a href="/category/bio.html">Bio</a></li> 
                     <li  >  <a href="/category/pubs.html">Pubs</a></li> 
                     <li><a href="/vectorprojector/vectorprojector.html">Vector Projector</a></li>
@@ -34,15 +34,19 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./make_db.html" rel="bookmark"
+           title="Permalink to SQLite3 Databases: Creating, Populating and Retreiving Data, Part 1"><strong>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 1</strong></a></h1>
+    </header>
 
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../make_db.html"><strong>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 1</strong></a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <span>Fri 04 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info --><p>Structured Query Language (SQL) is a langauge that is used to design and manage data held in a relational database. A relational database is a database that contains multiple tables that contain related values.  For example, one table may contain names of people and their ages, and another may contain names of people and their favorite color. The names of the people are the related values. SQL provides a relatively easy (and commonly used) way of extracting only the data you want from the database that can later be analyzed or visualized.</p>
+<span>| tags: <a href="./tag/sqlite.html">SQLite</a><a href="./tag/relational-database.html">relational database</a></span>
+</footer><!-- /.post-info -->      <p>Structured Query Language (SQL) is a langauge that is used to design and manage data held in a relational database. A relational database is a database that contains multiple tables that contain related values.  For example, one table may contain names of people and their ages, and another may contain names of people and their favorite color. The names of the people are the related values. SQL provides a relatively easy (and commonly used) way of extracting only the data you want from the database that can later be analyzed or visualized.</p>
 <p><a class="reference external" href="https://github.com/brannerchinese">David Branner</a>, a fabulous <strong>python</strong> coder who dabbles in creating and using <strong>SQLite</strong> databases, and knows a thing or two about the <a class="reference external" href="https://brannerchinese.com/">Chinese Language</a>, and I are working on <a class="reference external" href="https://github.com/WeatherStudy/weather_study">The Weather Project</a> where we intend to examine the accuracy of weather forecasts. In order to do that, we need to collect weather forecasts that will be analyzed.  We decided to use weather forecasts from <a class="reference external" href="http://openweathermap.org/">Open Weather Map</a>, a website that gives open access to weather forecasts through an API key. Through the API key, we are able to download JSON files that contain information on the weather forecasts at specific locations around the world. Our goal is for each day to collect weather forecasts for that day and from 1 day before to about two weeks out. We collect the maximum temperature (maxt), the minimum temperature (mint), snow and rain forecasts for each of the forecasts.  Then we subtract the predicted value from the observation to estimate how much the forecast predicts warmer/cooler temperatures or more/less snow and rain.  Hence, we need to collect a lot of information and organize it in a way that will be relatively easy and consistent to retreive. To do that, we created an SQLite3 database. This blog is the first of three, and focuses on <strong>creating a Database with SQLite3</strong>.  The next blogs will cover <strong>Populating an SQLite Database with Data using Python</strong> and <strong>Retrieving data from an SQLite Database using Python</strong>.</p>
 <div class="section" id="part-1-creating-a-database-with-sqlite3">
 <h2><strong>Part 1: Creating a Database with SQLite3</strong></h2>
@@ -175,177 +179,11 @@ SELECT * FROM sqlite_master WHERE type='table';
 <p>Two tables should print out -- the first one being the <em>locations</em> table, the second your brand new <em>owm_values</em> table.</p>
 <p>Congratulations!  You have now set up a database in SQLite3 that contains two tables.  Stay tuned for  <strong>Part 2 Populating an SQLite Database using Python</strong>, coming soon...</p>
 </div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1><a name = "moreblogs">Other articles</a></h1>
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../make_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retreiving Data, Part 1"><strong>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 1</strong></a></h1>
-                </header>
+    </div><!-- /.entry-content -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 04 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Creating a Database</strong></p>
-
-                <a class="readmore" href="../make_db.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../SSEs.html" rel="bookmark"
-                           title="Permalink to The Cascadia Subduction Zone gets Creepier and Creepier..."><strong>The Cascadia Subduction Zone gets Creepier and Creepier...</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 23 May 2014</span>
-<span>| tags: <a href="../tag/cascadia-subduction-zone.html">Cascadia Subduction Zone</a><a href="../tag/seismic-hazard.html">Seismic Hazard</a><a href="../tag/gps.html">GPS</a><a href="../tag/slow-slip.html">Slow Slip</a><a href="../tag/sse.html">SSE</a><a href="../tag/tremor.html">Tremor</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Cascadia Subduction Zone Slow Slip and Creep</strong></p>
-
-                <a class="readmore" href="../SSEs.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Cascadia.html" rel="bookmark"
-                           title="Permalink to Why the Cascadia Subduction Zone is Creepy"><strong>Why the Cascadia Subduction Zone is Creepy</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 01 May 2014</span>
-<span>| tags: <a href="../tag/cascadia-subduction-zone.html">Cascadia Subduction Zone</a><a href="../tag/seismic-hazard.html">Seismic Hazard</a><a href="../tag/gps.html">GPS</a><a href="../tag/paleoseismology.html">Paleoseismology</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Cascadia Subduction Zone Creep</strong></p>
-
-                <a class="readmore" href="../Cascadia.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../japan_eq.html" rel="bookmark"
-                           title="Permalink to Movie of March 11, 2011 Japan Earthquake and its aftershocks"><strong>Movie of March 11, 2011 Japan Earthquake and its aftershocks</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/tohoku-earthquake.html">Tohoku Earthquake</a><a href="../tag/japan.html">Japan</a><a href="../tag/earthquake-magnitudes.html">Earthquake Magnitudes</a><a href="../tag/javascript.html">JavaScript</a><a href="../tag/d3.html">D3</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Movie of the 2011 Japan earthquake and its aftershocks</strong></p>
-
-                <a class="readmore" href="../japan_eq.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../ehalf.html" rel="bookmark"
-                           title="Permalink to Elastic half space model of a vertical strike slip fault"><strong>Elastic half space model of a vertical strike slip fault</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/strike-slip-faults.html">Strike Slip Faults</a><a href="../tag/fortran.html">Fortran</a><a href="../tag/gmt.html">GMT</a><a href="../tag/python.html">Python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Elastic Half Space modeling of a vertical Strike Slip Fault</strong></p>
-
-                <a class="readmore" href="../ehalf.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../GMT.html" rel="bookmark"
-                           title="Permalink to Mapping and Plotting data with General Mapping Tools (GMT)"><strong>Mapping and Plotting data with General Mapping Tools (GMT)</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 14 April 2014</span>
-<span>| tags: <a href="../tag/general-mapping-tools.html">General Mapping Tools</a><a href="../tag/gmt.html">GMT</a><a href="../tag/etopo1.html">ETOPO1</a><a href="../tag/shell-script.html">shell script</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Data Visualization with GMT</strong></p>
-
-                <a class="readmore" href="../GMT.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Fibo.html" rel="bookmark"
-                           title="Permalink to Iteration and Recursion in Python"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 10 April 2014</span>
-<span>| tags: <a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/python.html">python</a><a href="../tag/iterative.html">iterative</a><a href="../tag/recursion.html">recursion</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Iteration vs. Recursion in Python</strong></p>
-
-                <a class="readmore" href="../Fibo.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../VectorProj.html" rel="bookmark"
-                           title="Permalink to Projecting GPS velocity vectors onto a profile">Projecting GPS velocity vectors onto a profile</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 19 March 2014</span>
-<span>| tags: <a href="../tag/gps.html">GPS</a><a href="../tag/vector-projection.html">vector projection</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>GPS velocity projection</strong></p>
-
-                <a class="readmore" href="../VectorProj.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../MyBio.html" rel="bookmark"
-                           title="Permalink to About Me">About Me</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 13 March 2014</span>
-<span>| tags: <a href="../tag/gina.html">Gina</a><a href="../tag/schmalzle.html">Schmalzle</a><a href="../tag/bos-techonologies.html">BOS Techonologies</a><a href="../tag/hacker-school.html">Hacker School</a><a href="../tag/university-of-miami.html">University of Miami</a></span>
-</footer><!-- /.post-info -->                <p class="first last">Gina's Bio</p>
-
-                <a class="readmore" href="../MyBio.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../GeodesyGina.html" rel="bookmark"
-                           title="Permalink to Setting up Custom Domain Names with Github Pages">Setting up Custom Domain Names with Github Pages</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 11 March 2014</span>
-<span>| tags: <a href="../tag/pelican.html">pelican</a><a href="../tag/custom-domain-name.html">custom domain name</a><a href="../tag/godaddy.html">godaddy</a></span>
-</footer><!-- /.post-info -->                <p class="first last">Custom domain names</p>
-
-                <a class="readmore" href="../GeodesyGina.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 2
-        <a href="../author/gina-schmalzle2.html">&raquo;</a>
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
