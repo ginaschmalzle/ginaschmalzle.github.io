@@ -12,8 +12,8 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - python</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 2</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
         <!--[if IE]>
@@ -23,9 +23,9 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Gina Schmalzle </a></h1>
+                <h1><a href="./">Gina Schmalzle </a></h1>
                 <nav><ul>
-                    <li  >  <a href="/category/home.html">Home</a></li> 
+                    <li  class="active" >  <a href="/category/home.html">Home</a></li> 
                     <li  >  <a href="/category/bio.html">Bio</a></li> 
                     <li  >  <a href="/category/pubs.html">Pubs</a></li> 
                     <li><a href="/vectorprojector/vectorprojector.html">Vector Projector</a></li>
@@ -34,15 +34,19 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./pop_db.html" rel="bookmark"
+           title="Permalink to SQLite3 Databases: Creating, Populating and Retreiving Data, Part 2"><strong>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 2</strong></a></h1>
+    </header>
 
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../pop_db.html"><strong>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 2</strong></a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <span>Wed 09 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/python.html">python</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info --><p>In <a class="reference external" href="/make_db.html">Part 1 Creating a Database with SQLite3</a>  we built a database.  Here we will use the functionality of Python 3.4 to help populate our database created in Part 1 with data and weather forecasts. This blog assumes you followd Part 1, and have some prior knowledge of Python. Much of this work was done with <a class="reference external" href="https://github.com/brannerchinese">David Branner</a>, who was incredibly patient in teaching me how to do this... Kudos, David!</p>
+<span>| tags: <a href="./tag/sqlite.html">SQLite</a><a href="./tag/python.html">python</a><a href="./tag/relational-database.html">relational database</a></span>
+</footer><!-- /.post-info -->      <p>In <a class="reference external" href="/make_db.html">Part 1 Creating a Database with SQLite3</a>  we built a database.  Here we will use the functionality of Python 3.4 to help populate our database created in Part 1 with data and weather forecasts. This blog assumes you followd Part 1, and have some prior knowledge of Python. Much of this work was done with <a class="reference external" href="https://github.com/brannerchinese">David Branner</a>, who was incredibly patient in teaching me how to do this... Kudos, David!</p>
 <div class="section" id="part-2-populating-an-sqlite-database-using-python">
 <h2><strong>Part 2. Populating an SQLite Database using Python</strong></h2>
 <p>Let's put some data into our database!  First, let's fill up our <em>locations</em> TABLE. We collected and keep a list of the cities, their unique codes provided by Open Weather Map, their latitudes and longitudes and their country codes <a class="reference external" href="https://raw.githubusercontent.com/WeatherStudy/weather_study/master/data/city_lists/city_list_normalized_20140425-1923.txt">here</a>, in a file called city_list_normalized_20140425-1923.txt.  This file contains information on the cities and looks like this:</p>
@@ -287,80 +291,11 @@ INSERT INTO owm_values (location_id, target_date) VALUES (key, target_date)
 <p>where 'key' is the location city id, and 'target_date' is the date the forecast is for.  Note the <em>location_id</em> of the <em>owm_values</em> TABLE refers to the <em>city_codes</em> of the locations TABLE.</p>
 <p>There you go!  You now have a relational database that has been populated with data!  Now what to do with it... Stay tuned for Part 3 Retrieving data from an SQLite Database using Python.</p>
 </div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1><a name = "moreblogs">Other articles</a></h1>
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../pop_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retreiving Data, Part 2"><strong>SQLite3 Databases: Creating, Populating and Retreiving Data, Part 2</strong></a></h1>
-                </header>
+    </div><!-- /.entry-content -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 09 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/python.html">python</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Populating a Database</strong></p>
-
-                <a class="readmore" href="../pop_db.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../dict.html" rel="bookmark"
-                           title="Permalink to The Dictionary Data structure"><strong>The Dictionary Data structure</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 01 July 2014</span>
-<span>| tags: <a href="../tag/dictionaries.html">dictionaries</a><a href="../tag/python.html">python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Using dictionaries in Python</strong></p>
-
-                <a class="readmore" href="../dict.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../ehalf.html" rel="bookmark"
-                           title="Permalink to Elastic half space model of a vertical strike slip fault"><strong>Elastic half space model of a vertical strike slip fault</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/strike-slip-faults.html">Strike Slip Faults</a><a href="../tag/fortran.html">Fortran</a><a href="../tag/gmt.html">GMT</a><a href="../tag/python.html">Python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Elastic Half Space modeling of a vertical Strike Slip Fault</strong></p>
-
-                <a class="readmore" href="../ehalf.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Fibo.html" rel="bookmark"
-                           title="Permalink to Iteration and Recursion in Python"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 10 April 2014</span>
-<span>| tags: <a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/python.html">python</a><a href="../tag/iterative.html">iterative</a><a href="../tag/recursion.html">recursion</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Iteration vs. Recursion in Python</strong></p>
-
-                <a class="readmore" href="../Fibo.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
