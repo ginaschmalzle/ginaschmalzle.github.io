@@ -12,8 +12,8 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - Home</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>My big fat shoe-shopping adventure: Iterative sampling in R</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
         <!--[if IE]>
@@ -23,7 +23,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Gina Schmalzle </a></h1>
+                <h1><a href="./">Gina Schmalzle </a></h1>
                 <nav><ul>
                     <li  class="active" >  <a href="/category/home.html">Home</a></li> 
                     <li  >  <a href="/category/bio.html">Bio</a></li> 
@@ -34,15 +34,19 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./sampling.html" rel="bookmark"
+           title="Permalink to My big fat shoe-shopping adventure: Iterative sampling in R"><strong>My big fat shoe-shopping adventure: Iterative sampling in R</strong></a></h1>
+    </header>
 
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../sampling.html"><strong>My big fat shoe-shopping adventure: Iterative sampling in R</strong></a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <span>Mon 28 July 2014</span>
-<span>| tags: <a href="../tag/r.html">R</a><a href="../tag/simulations.html">simulations</a><a href="../tag/sampling.html">sampling</a></span>
-</footer><!-- /.post-info --><div class="section" id="r-helped-me-figure-out-how-many-shoes-i-can-buy">
+<span>| tags: <a href="./tag/r.html">R</a><a href="./tag/simulations.html">simulations</a><a href="./tag/sampling.html">sampling</a></span>
+</footer><!-- /.post-info -->      <div class="section" id="r-helped-me-figure-out-how-many-shoes-i-can-buy">
 <h2><strong>R helped me figure out how many shoes I can buy</strong></h2>
 <p>One of the things I love about coding and data science is that I get to work on a lot of interesting problems.  One of my good friends Craig Faunce <a class="reference external" href="https://www.linkedin.com/pub/craig-h-faunce/66/789/1ba">Craig Faunce</a> approached me over a beer with a problem.  It seems he had been asked to determine how many items he could buy given a certain budget.  Ok, if each and every item costs the same this is simple math, which has me puzzled.  Of course it’s not that easy, since each and every item has a different cost. Ok, still not that difficult.  It only becomes something that I think you would be interested in when he gets to the next part, where he says: &quot;I'm asked to sample one population of items at a given rate, and then with my left-over money, determine at what rate I can afford to sample a second, totally different population of items with totally different costs per item.&quot;</p>
 <p>Ok!  We have an interesting little sampling project.  Since Craig works for a large employer, he can't really divulge every gory detail about this issue, and obviously getting the real data isn't going to happen here.  Besides, it sounded pretty boring to me, so I thought about something that I can relate to - shoes!</p>
@@ -199,161 +203,28 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 <img alt="deforming_plates" class="align-center" src="/images/percent_store_invent.png" style="width: 700.0px; height: 300.0px;" />
 <p>And that's our shoe-shopping adventure:  Sampling with the built-in function of sample in R, where we determined the size of a single sample through our rate, and secondly with the supplied function where we sample individual elements in a population and evaluate each outcome against a set threshold.  Sampling forwards and backwards- have fun, and good shopping!</p>
 </div>
-<p><a href="../sampling.html#disqus_thread">comments</a></p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1><a name = "moreblogs">Other articles</a></h1>
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../ret_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retrieving Data, Part 3"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 3</strong></a></h1>
-                </header>
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments </h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'geodesygina'; // required: replace example with your forum shortname
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Sun 27 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/python.html">python</a><a href="../tag/relational-database.html">relational database</a><a href="../tag/spatial-analysis.html">spatial analysis</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Retrieving Data from a Database</strong></p>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 
-                <a class="readmore" href="../ret_db.html">read more</a>
-<p><a href="../ret_db.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../pop_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retrieving Data, Part 2"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 2</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 09 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/python.html">python</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Populating a Database</strong></p>
-
-                <a class="readmore" href="../pop_db.html">read more</a>
-<p><a href="../pop_db.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../make_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retrieving Data, Part 1"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 1</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 04 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Creating a Database</strong></p>
-
-                <a class="readmore" href="../make_db.html">read more</a>
-<p><a href="../make_db.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../dict.html" rel="bookmark"
-                           title="Permalink to The Dictionary Data structure"><strong>The Dictionary Data structure</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 01 July 2014</span>
-<span>| tags: <a href="../tag/dictionaries.html">dictionaries</a><a href="../tag/python.html">python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Using dictionaries in Python</strong></p>
-
-                <a class="readmore" href="../dict.html">read more</a>
-<p><a href="../dict.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../SSEs.html" rel="bookmark"
-                           title="Permalink to The Cascadia Subduction Zone gets Creepier and Creepier..."><strong>The Cascadia Subduction Zone gets Creepier and Creepier...</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 23 May 2014</span>
-<span>| tags: <a href="../tag/cascadia-subduction-zone.html">Cascadia Subduction Zone</a><a href="../tag/seismic-hazard.html">Seismic Hazard</a><a href="../tag/gps.html">GPS</a><a href="../tag/slow-slip.html">Slow Slip</a><a href="../tag/sse.html">SSE</a><a href="../tag/tremor.html">Tremor</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Cascadia Subduction Zone Slow Slip and Creep</strong></p>
-
-                <a class="readmore" href="../SSEs.html">read more</a>
-<p><a href="../SSEs.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Cascadia.html" rel="bookmark"
-                           title="Permalink to Why the Cascadia Subduction Zone is Creepy"><strong>Why the Cascadia Subduction Zone is Creepy</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 01 May 2014</span>
-<span>| tags: <a href="../tag/cascadia-subduction-zone.html">Cascadia Subduction Zone</a><a href="../tag/seismic-hazard.html">Seismic Hazard</a><a href="../tag/gps.html">GPS</a><a href="../tag/paleoseismology.html">Paleoseismology</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Cascadia Subduction Zone Creep</strong></p>
-
-                <a class="readmore" href="../Cascadia.html">read more</a>
-<p><a href="../Cascadia.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../japan_eq.html" rel="bookmark"
-                           title="Permalink to Movie of March 11, 2011 Japan Earthquake and its aftershocks"><strong>Movie of March 11, 2011 Japan Earthquake and its aftershocks</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/tohoku-earthquake.html">Tohoku Earthquake</a><a href="../tag/japan.html">Japan</a><a href="../tag/earthquake-magnitudes.html">Earthquake Magnitudes</a><a href="../tag/javascript.html">JavaScript</a><a href="../tag/d3.html">D3</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Movie of the 2011 Japan earthquake and its aftershocks</strong></p>
-
-                <a class="readmore" href="../japan_eq.html">read more</a>
-<p><a href="../japan_eq.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../ehalf.html" rel="bookmark"
-                           title="Permalink to Elastic half space model of a vertical strike slip fault"><strong>Elastic half space model of a vertical strike slip fault</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/strike-slip-faults.html">Strike Slip Faults</a><a href="../tag/fortran.html">Fortran</a><a href="../tag/gmt.html">GMT</a><a href="../tag/python.html">Python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Elastic Half Space modeling of a vertical Strike Slip Fault</strong></p>
-
-                <a class="readmore" href="../ehalf.html">read more</a>
-<p><a href="../ehalf.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../GMT.html" rel="bookmark"
-                           title="Permalink to Mapping and Plotting data with General Mapping Tools (GMT)"><strong>Mapping and Plotting data with General Mapping Tools (GMT)</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 14 April 2014</span>
-<span>| tags: <a href="../tag/general-mapping-tools.html">General Mapping Tools</a><a href="../tag/gmt.html">GMT</a><a href="../tag/etopo1.html">ETOPO1</a><a href="../tag/shell-script.html">shell script</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Data Visualization with GMT</strong></p>
-
-                <a class="readmore" href="../GMT.html">read more</a>
-<p><a href="../GMT.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 2
-        <a href="../category/home2.html">&raquo;</a>
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
