@@ -12,8 +12,8 @@
 
 </script>
         <meta charset="utf-8" />
-        <title>Gina Schmalzle - Home</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 3</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://geodesygina.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gina Schmalzle Atom Feed" />
 
         <!--[if IE]>
@@ -23,7 +23,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">Gina Schmalzle </a></h1>
+                <h1><a href="./">Gina Schmalzle </a></h1>
                 <nav><ul>
                     <li  class="active" >  <a href="/category/home.html">Home</a></li> 
                     <li  >  <a href="/category/bio.html">Bio</a></li> 
@@ -34,15 +34,19 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./ret_db.html" rel="bookmark"
+           title="Permalink to SQLite3 Databases: Creating, Populating and Retrieving Data, Part 3"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 3</strong></a></h1>
+    </header>
 
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../ret_db.html"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 3</strong></a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <span>Sun 27 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/python.html">python</a><a href="../tag/relational-database.html">relational database</a><a href="../tag/spatial-analysis.html">spatial analysis</a></span>
-</footer><!-- /.post-info --><p>In <a class="reference external" href="http://geodesygina.com/make_db.html">Part 1 Creating a Database with SQLite3</a>  we built a database. In <a class="reference external" href="http://geodesygina.com/pop_db.html">Part 2 Populating an SQLite Database using Python</a> we inserted values into TABLES within our database using Python 3.4 and SQLite3. Here we continue using the functionality of Python 3.4 to retrieve and visualize forecasts contained within our database.  Again, I cannot thank enough <a class="reference external" href="https://github.com/brannerchinese">David Branner</a>, for his efforts with this project!</p>
+<span>| tags: <a href="./tag/sqlite.html">SQLite</a><a href="./tag/python.html">python</a><a href="./tag/relational-database.html">relational database</a><a href="./tag/spatial-analysis.html">spatial analysis</a></span>
+</footer><!-- /.post-info -->      <p>In <a class="reference external" href="http://geodesygina.com/make_db.html">Part 1 Creating a Database with SQLite3</a>  we built a database. In <a class="reference external" href="http://geodesygina.com/pop_db.html">Part 2 Populating an SQLite Database using Python</a> we inserted values into TABLES within our database using Python 3.4 and SQLite3. Here we continue using the functionality of Python 3.4 to retrieve and visualize forecasts contained within our database.  Again, I cannot thank enough <a class="reference external" href="https://github.com/brannerchinese">David Branner</a>, for his efforts with this project!</p>
 <p>Our desired end-product will be to produce the map below of the differences between forecasts that were made for a specific calendar day and the forecast for that day.</p>
 <img alt="differenced_forecasts" class="align-left" src="/images/weather_diff.png" style="width: 800.0px; height: 500.0px;" />
 <p><em>Figure 1. Maps of forecasted differences (the difference between the day of forecast and the forecast for X days out).</em></p>
@@ -223,161 +227,28 @@ def make_basemap(lon,lat,diff,target_date):
 <p>Executing make_map() we get the Figure 1. Note that a subplot is created for each differenced forecast through a for loop which also defines the subplot being created.</p>
 <p>Like what you see?  Stay tuned, the next step on my agenda is making an interactive website that will allow users to play with the data!  Thanks for reading!</p>
 </div>
-<p><a href="../ret_db.html#disqus_thread">comments</a></p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1><a name = "moreblogs">Other articles</a></h1>
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../pop_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retrieving Data, Part 2"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 2</strong></a></h1>
-                </header>
+    </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments </h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'geodesygina'; // required: replace example with your forum shortname
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 09 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/python.html">python</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Populating a Database</strong></p>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 
-                <a class="readmore" href="../pop_db.html">read more</a>
-<p><a href="../pop_db.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../make_db.html" rel="bookmark"
-                           title="Permalink to SQLite3 Databases: Creating, Populating and Retrieving Data, Part 1"><strong>SQLite3 Databases: Creating, Populating and Retrieving Data, Part 1</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 04 July 2014</span>
-<span>| tags: <a href="../tag/sqlite.html">SQLite</a><a href="../tag/relational-database.html">relational database</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Creating a Database</strong></p>
-
-                <a class="readmore" href="../make_db.html">read more</a>
-<p><a href="../make_db.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../dict.html" rel="bookmark"
-                           title="Permalink to The Dictionary Data structure"><strong>The Dictionary Data structure</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 01 July 2014</span>
-<span>| tags: <a href="../tag/dictionaries.html">dictionaries</a><a href="../tag/python.html">python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Using dictionaries in Python</strong></p>
-
-                <a class="readmore" href="../dict.html">read more</a>
-<p><a href="../dict.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../SSEs.html" rel="bookmark"
-                           title="Permalink to The Cascadia Subduction Zone gets Creepier and Creepier..."><strong>The Cascadia Subduction Zone gets Creepier and Creepier...</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 23 May 2014</span>
-<span>| tags: <a href="../tag/cascadia-subduction-zone.html">Cascadia Subduction Zone</a><a href="../tag/seismic-hazard.html">Seismic Hazard</a><a href="../tag/gps.html">GPS</a><a href="../tag/slow-slip.html">Slow Slip</a><a href="../tag/sse.html">SSE</a><a href="../tag/tremor.html">Tremor</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Cascadia Subduction Zone Slow Slip and Creep</strong></p>
-
-                <a class="readmore" href="../SSEs.html">read more</a>
-<p><a href="../SSEs.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Cascadia.html" rel="bookmark"
-                           title="Permalink to Why the Cascadia Subduction Zone is Creepy"><strong>Why the Cascadia Subduction Zone is Creepy</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 01 May 2014</span>
-<span>| tags: <a href="../tag/cascadia-subduction-zone.html">Cascadia Subduction Zone</a><a href="../tag/seismic-hazard.html">Seismic Hazard</a><a href="../tag/gps.html">GPS</a><a href="../tag/paleoseismology.html">Paleoseismology</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Cascadia Subduction Zone Creep</strong></p>
-
-                <a class="readmore" href="../Cascadia.html">read more</a>
-<p><a href="../Cascadia.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../japan_eq.html" rel="bookmark"
-                           title="Permalink to Movie of March 11, 2011 Japan Earthquake and its aftershocks"><strong>Movie of March 11, 2011 Japan Earthquake and its aftershocks</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/tohoku-earthquake.html">Tohoku Earthquake</a><a href="../tag/japan.html">Japan</a><a href="../tag/earthquake-magnitudes.html">Earthquake Magnitudes</a><a href="../tag/javascript.html">JavaScript</a><a href="../tag/d3.html">D3</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Movie of the 2011 Japan earthquake and its aftershocks</strong></p>
-
-                <a class="readmore" href="../japan_eq.html">read more</a>
-<p><a href="../japan_eq.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../ehalf.html" rel="bookmark"
-                           title="Permalink to Elastic half space model of a vertical strike slip fault"><strong>Elastic half space model of a vertical strike slip fault</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 18 April 2014</span>
-<span>| tags: <a href="../tag/strike-slip-faults.html">Strike Slip Faults</a><a href="../tag/fortran.html">Fortran</a><a href="../tag/gmt.html">GMT</a><a href="../tag/python.html">Python</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Elastic Half Space modeling of a vertical Strike Slip Fault</strong></p>
-
-                <a class="readmore" href="../ehalf.html">read more</a>
-<p><a href="../ehalf.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../GMT.html" rel="bookmark"
-                           title="Permalink to Mapping and Plotting data with General Mapping Tools (GMT)"><strong>Mapping and Plotting data with General Mapping Tools (GMT)</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 14 April 2014</span>
-<span>| tags: <a href="../tag/general-mapping-tools.html">General Mapping Tools</a><a href="../tag/gmt.html">GMT</a><a href="../tag/etopo1.html">ETOPO1</a><a href="../tag/shell-script.html">shell script</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Data Visualization with GMT</strong></p>
-
-                <a class="readmore" href="../GMT.html">read more</a>
-<p><a href="../GMT.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../Fibo.html" rel="bookmark"
-                           title="Permalink to Iteration and Recursion in Python"><strong>Iteration</strong> and <strong>Recursion</strong> in <strong>Python</strong></a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 10 April 2014</span>
-<span>| tags: <a href="../tag/fibonacci.html">Fibonacci</a><a href="../tag/python.html">python</a><a href="../tag/iterative.html">iterative</a><a href="../tag/recursion.html">recursion</a></span>
-</footer><!-- /.post-info -->                <p class="first last"><strong>Iteration vs. Recursion in Python</strong></p>
-
-                <a class="readmore" href="../Fibo.html">read more</a>
-<p><a href="../Fibo.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 2
-        <a href="../category/home2.html">&raquo;</a>
-</p>
-            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
